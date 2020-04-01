@@ -11,9 +11,9 @@ library(openxlsx)
 library(dplyr)
 library(sigmajs)
 
-# Buscar tuits, incluyendo retuits - sustituir "HASHTAG_A_BUSCAR" por lo que se quiera buscar (un HT o texto, es indiferente)
+# Buscar tuits, incluyendo retuits - sustituir "SUSTITUIR" por lo que se quiera buscar (un HT o texto, es indiferente)
 # En n = xxxx; xxxx es la cantidad de tuits que se quieren coger
-tweets <- search_tweets("HASHTAG_A_BUSCAR", n = 4000, include_rts = TRUE)
+tweets <- search_tweets("#SUSTITUIR", n = 4000, include_rts = TRUE)
 
 net <- tweets %>% 
   gt_edges(screen_name, retweet_screen_name) %>% 
