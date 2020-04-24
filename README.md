@@ -1,16 +1,6 @@
 # twitter-vis-gephi
 ## Twitter -> Visualización en Rstudio -> Gephi
 
-Este proyecto sólo consta de un script en R.
-Utiliza las siguientes librerías, todas disponibles en *CRAN*:
-- **rtweet**
-- **graphTweets**
-- **openxlsx**
-- **dplyr**
-- **sigmajs**
-
-El script en R lleva por nombre `Captura + Visualización.R` y está explicado con comentarios, separado en secciones.
-> No necesita cuenta de desarrollador: el paquete **rtweet** autoriza con el usuario personal sin necesidad de introducir en API de desarrollo. Basta con tener una cuenta en Twitter.
 
 El objeto de este script es descargar los tuits que utilizan un *hashtag* o un conjunto de palabras (*n* variable). 
 Funciona de la siguiente manera:
@@ -20,6 +10,16 @@ Funciona de la siguiente manera:
 5. Muestra una visualización -> útil sobre todo para comprobar que funciona todo.
 6. Exporta aristas y nodos a dos tablas de excel (.xlsx) listas para ser importadas en Gephi
 
+> NOTA
+> No es necesaria una cuenta de desarrollador de Twitter: para este caso, el paquete **rtweet** autoriza con el usuario normal sin necesidad de necesitar acceder a la API de desarrollo. Basta con tener una cuenta normal en Twitter.
 
 
+El proyecto sólo consta de un script en R.
+Utiliza las siguientes librerías, todas disponibles en *CRAN*:
+- **rtweet**
+- **graphTweets**
+- **openxlsx**
+- **dplyr**
+- **sigmajs**
 
+El script en R lleva por nombre `Captura + Visualización.R` y está explicado con los correspondientes comentarios, separado en secciones.
